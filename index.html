@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/index.css">
+
+        <!-- Bootstrap -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    </head>
+    <body>
+         <!-- Barra de navegação principal -->
+        <div class="row">
+            <nav class="navbar bg-dark navbar-dark">
+                <!-- Menu horizontal (visível) -->
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation"> 
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="d-flex">
+                        <a href="#" type="submit" class="btn btn-light rounded-0">
+                            <svg class="bi" width="20" height="20">
+                                <use xlink:href="../icons/bootstrap-icons.svg#search"/>
+                            </svg>
+                        </a>
+                        <input class="form-control rounded-0" type="search" placeholder="Pesquisar" aria-label="Search">
+                    </div>
+                </div>
+                <!-- Menu lateral (escondido) -->
+                <div class="collapse w-100 mt-3" id="sidebar">
+                    <!-- <div class="row" style="height: 50px;">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="close badge btn-outline-danger" aria-label="Close" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" style="width: 60px;">
+                                <span aria-hidden="true" class="text-white">&times;</span>
+                            </button>
+                        </div>
+                    </div> -->
+                    <div class="row">
+                        <img src="/img/logo.png" class="rounded mx-auto d-block" alt="Logo" style="width: 140px; height: 80px;">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center bg-danger" style="height: 60px;">
+                        <h5 class="text-light">Menu</h5>
+                    </div>
+
+                    <!-- Botão 1 -->
+                    <div class="row">
+                        <div class="dropdown px-0">
+                            <button class="btn btn-block btn-lg btn-dark" type="button" data-toggle="collapse" data-target="#list_01" aria-controls="list_01" aria-expanded="false">
+                                <span class="d-flex justify-content-between align-items-center">
+                                    Produtos
+                                    <svg class="bi" width="20" height="20" fill="currentColor">
+                                        <use xlink:href="../icons/bootstrap-icons.svg#chevron-down"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <ul class="collapse list-group-item" id="list_01">
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        Tópico 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        Tópico 2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        Tópico 3
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        Tópico 4
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        Tópico 5
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Botão 2 -->
+                    <div class="row">
+                        <div class="dropdown px-0">
+                            <button class="btn btn-block btn-lg btn-dark" type="button" data-toggle="collapse" data-target="#list_02" aria-controls="list_02" aria-expanded="false">
+                                <span class="d-flex justify-content-between align-items-center">
+                                    Publicações
+                                    <svg class="bi" width="20" height="20" fill="currentColor">
+                                        <use xlink:href="../icons/bootstrap-icons.svg#chevron-down"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <ul class="collapse list-group-item" id="list_02">
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        Tópico 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        Tópico 2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        Tópico 3
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        Tópico 4
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        Tópico 5
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row">
+            <!-- Barra de navegação para o conteúdo da página -->
+            <nav class="navbar sticky-top d-flex justify-content-around align-items-center bg-dark">
+                <a href="#" class="text-decoration-none text-white">
+                    Últimas
+                </a>
+                <a href="#" class="text-decoration-none text-white">
+                    Popular
+                </a>
+                <a href="#" class="text-decoration-none text-white">
+                    Especial
+                </a>
+            </nav>
+
+            <!-- Conteúdo principal -->
+            <main>
+                <a href="/html/informativo.html" class="row text-decoration-none">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <p class="card-text text-dark">
+                                        Conceito #1: Aplicativo com o .pdf original do informativo imbutido.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Informativo</small></p>
+                                </div>
+                            </div>
+                            <div class="col-4 p-2">
+                                <img src="/img/stock_icms.jpg" class="img-fluid h-100" alt="Capa">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/html/informativo_02.html" class="row text-decoration-none">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <p class="card-text text-dark">
+                                        Conceito #2: Aplicativo com o informativo construído usando somente html e seguindo o modelo original.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Informativo</small></p>
+                                </div>
+                            </div>
+                            <div class="col-4 p-2">
+                                <img src="/img/stock_icms.jpg" class="img-fluid h-100" alt="Capa">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/html/informativo_03.html" class="row text-decoration-none">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <p class="card-text text-dark">
+                                        Conceito #3: Aplicativo com o informativo construído usando html e css e seguindo o modelo original.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Informativo</small></p>
+                                </div>
+                            </div>
+                            <div class="col-4 p-2">
+                                <img src="/img/stock_icms.jpg" class="img-fluid h-100" alt="Capa">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/html/informativo_04.html" class="row text-decoration-none">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <p class="card-text text-dark">
+                                        Conceito #4: Aplicativo com o informativo construído usando html e css e seguindo um design novo.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Informativo</small></p>
+                                </div>
+                            </div>
+                            <div class="col-4 p-2">
+                                <img src="/img/stock_icms.jpg" class="img-fluid h-100" alt="Capa">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/html/informativo_05.html" class="row text-decoration-none">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <p class="card-text text-dark">
+                                        Conceito #5: Informativo construído para a web usando html, css e gráficos dinâmicos.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Informativo</small></p>
+                                </div>
+                            </div>
+                            <div class="col-4 p-2">
+                                <img src="/img/stock_icms.jpg" class="img-fluid h-100" alt="Capa">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </main>
+
+            <!-- Barra de navegação fixada embaixo -->
+            <nav class="navbar fixed-bottom d-flex justify-content-around align-items-center bg-dark navbar-dark">
+                <a href="#" class="d-flex flex-column align-items-center text-decoration-none text-white">
+                    <svg class="bi" width="20" height="20">
+                        <use xlink:href="../icons/bootstrap-icons.svg#house-door"/>
+                    </svg>
+                    <span id="option">Início</span>
+                </a>
+                <a href="#" class="d-flex flex-column align-items-center text-decoration-none text-white">
+                    <svg class="bi" width="20" height="20">
+                        <use xlink:href="../icons/bootstrap-icons.svg#bookmarks"/>
+                    </svg>
+                    <span id="option">Favoritos</span>
+                </a>
+                <a href="#" class="d-flex flex-column align-items-center text-decoration-none text-white">
+                    <svg class="bi" width="20" height="20">
+                        <use xlink:href="../icons/bootstrap-icons.svg#archive"/>
+                    </svg>
+                    <span id="option">Arquivos</span>
+                </a>
+                <a href="#" class="d-flex flex-column align-items-center text-decoration-none text-white">
+                    <svg class="bi" width="20" height="20">
+                        <use xlink:href="../icons/bootstrap-icons.svg#gear"/>
+                    </svg>
+                    <span id="option">Opções</span>
+                </a>
+            </nav>
+        </div>
+        
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    </body>
+</html>
