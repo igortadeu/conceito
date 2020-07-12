@@ -33,8 +33,6 @@ categoryAxis.dataFields.category = "setor"
 
 // Eixo X
 var valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
-valueAxis.renderer.grid.template.location = 0;
-valueAxis.renderer.minGridDistance = 20;
 
 // -------SÉRIES--------
 
@@ -45,12 +43,12 @@ series.dataFields.categoryY = "setor";
 series.name = "2010";
 series.tooltipText = "{name}: [bold]{valueX}[/]";
 
-// // Série 2017
-// var series2 = chart.series.push(new am4charts.ColumnSeries());
-// series2.dataFields.valueX = "2017";
-// series2.dataFields.categoryY = "setor";
-// series2.name = "2017";
-// series2.tooltipText = "{name}: [bold]{valueX}[/]";
+// Série 2017
+var series2 = chart.series.push(new am4charts.ColumnSeries());
+series2.dataFields.valueX = "2017";
+series2.dataFields.categoryY = "setor";
+series2.name = "2017";
+series2.tooltipText = "{name}: [bold]{valueX}[/]";
 
 // Cursor
 chart.cursor = new am4charts.XYCursor();
